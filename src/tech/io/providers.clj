@@ -31,7 +31,7 @@
 
 
 (defn wrap-provider
-  "Works like middlewear.  But the providers have to implement it themselves; most
+  "Works like middleware.  But the providers have to implement it themselves; most
 general purpose (cache, redirect, auth) implement it via their src-provider member."
   ([prov-inner prov-outer]
    (assoc prov-outer
